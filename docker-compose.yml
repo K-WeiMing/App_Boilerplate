@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  flask:
+    container_name: flask_container
+    build:
+      dockerfile: flask_backend.dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    container_name: postgres_db
+    build:
+      dockerfile: db.dockerfile
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=example_db
+
+  react:
+    container_name: react_container
+    build:
+      dockerfile: react_frontend.dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - flask
