@@ -12,8 +12,8 @@ try:
     conn = sqlalchemy_engine.conn_db(
         username="admin",
         password="password",
-        # host="0.0.0.0",
-        host="db",
+        host="<docker service name, else 127.0.0.1",
+        host="your_db_name",
         port=5432,
         db_name="results",
     ).connect()
@@ -57,5 +57,4 @@ def example_query_db():
 
 
 if __name__ == "__main__":
-    # app.run(debug=True)
     app.run()
