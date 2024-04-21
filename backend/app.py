@@ -13,9 +13,8 @@ try:
         username="admin",
         password="password",
         host="<docker service name, else 127.0.0.1",
-        host="your_db_name",
         port=5432,
-        db_name="results",
+        db_name="your_db_name",
     ).connect()
 except:
     print("Unable to connect to DB")
