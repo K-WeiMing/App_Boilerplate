@@ -10,6 +10,6 @@ COPY ./database/init_db/init_db.sql /docker-entrypoint-initdb.d/
 # Copy csv files to initialize DB
 RUN mkdir /data
 
-COPY ./database/init_csv/ .
+COPY ./database/init_files/ .
 
 EXPOSE 5432
