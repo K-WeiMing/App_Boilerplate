@@ -14,7 +14,9 @@ Port: 5000 (Default)
 React is used to create the frontend with Nginx used as the webserver
 
 Npm packages:
-`npm install --save-dev @types/node`
+
+Path (TypeScript): `npm install --save-dev @types/node`
+Google Analytics: `npm i react-ga4`
 
 
 ## Running on Local (Development)
