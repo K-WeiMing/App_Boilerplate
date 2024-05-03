@@ -10,8 +10,8 @@ app = Flask(__name__)
 # Initialize DB connection
 try:
     conn = sqlalchemy_engine.conn_db(
-        username="admin",
-        password="password",
+        username="your_username",
+        password="your_password",
         host="<docker service name, else 127.0.0.1",
         port=5432,
         db_name="your_db_name",
@@ -36,8 +36,8 @@ def example_api():
 @app.route("/db_query", methods=["GET"])
 def example_query_db():
     conn = sqlalchemy_engine.conn_db(
-        username="username",
-        password="password",
+        username="your_username",
+        password="your_password",
         host="<docker service name, else 127.0.0.1",
         port=5432,  # Default port for postgres
         db_name="your_db_name",
