@@ -35,7 +35,7 @@ to preview production: `npm run build` followed by `npm run preview`
 
 `docker build -f db.dockerfile -t <name_of_your_image> .`
 
-`docker run -d --name <container_name> -e POSTGRES_DB=db_name -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=password -p 5432:5432 <name of your image>`
+`docker run -d --name <container_name> -e POSTGRES_DB=db_name -e POSTGRES_USER=<username> -e POSTGRES_PASSWORD=<password> -p 5432:5432 <name of your image>`
 
 - PgAdmin
 
