@@ -16,6 +16,7 @@ React is used to create the frontend with Nginx used as the webserver
 Npm packages:
 
 Path (TypeScript): `npm install --save-dev @types/node`
+
 Google Analytics: `npm i react-ga4`
 
 
